@@ -15,7 +15,7 @@ class ModuleInfoFull extends Fieldset
 <<<HTML
     <p>Permite eliminar Productos mediante una búsqueda y coincidencia de SKU.</p>
     <p>
-    php bin/magento gdw:rmproductsbysku --path={valor}<br/>
+    php bin/magento gdw:rmproductsbysku --path="{valor}"<br/>
     Confirmar eliminación de productos<br/>
     Listo !!
     </p>

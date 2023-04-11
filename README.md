@@ -1,5 +1,5 @@
 # GDW RmProductsBySkuPath para Magento 2
-Este módulo para magento 2  elimina productos con coincidencias en el SKU mediante consola.
+Este módulo para magento 2 elimina productos con coincidencias en el SKU mediante consola.
 
 ## Compatibilidad
 ✓ Magento 2.3.x, ✓ Magento 2.4.x
@@ -54,6 +54,14 @@ Listo.
 
 ### Expresiones de Gratitud
 
-* Comenta a otros sobre este proyecto 📢
-* [Invítame una cerveza 🍺](https://www.paypal.me/gestiondigitalweb). 
-* Da las gracias públicamente. 
+* 📢 Comenta a otros sobre este proyecto.
+* 👨🏽‍💻 Da las gracias públicamente.
+* [🍺 Invítame una cerveza](https://www.paypal.me/gestiondigitalweb)
+
+
+### Otros enlaces
+
+* [ Sitio web](https://gdw.mx/?utm_source=github&utm_medium=gdw&utm_campaign=rmproductsbyskupath&utm_id=link)
+* [Listado de Módulos](https://gdw.mx/modulos/)
+* [Facebook](https://www.facebook.com/GestionDigitalWeb)
+* [Youtube](https://www.youtube.com/c/Gestiondigitalweb)

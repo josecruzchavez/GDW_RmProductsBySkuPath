@@ -69,9 +69,11 @@ class RemoveProducts extends Command
                     $limit = self::LIMIT;
                     $output->writeln('<fg=blue>Only process '.self::LIMIT.' products, run command again after this turn.</>');
                 }
+                
                 $question = new ConfirmationQuestion('Continue with this action ? (y/n): ', false);
                 $helper = $this->getHelper('question');
                 $ans = $helper->ask($input, $output, $question);
+
                 if ($ans == 'y' || $ans == 'yes') {
                     $progressBar = new ProgressBar($output, $limit);
                     $progressBar->start();
@@ -107,7 +109,7 @@ class RemoveProducts extends Command
     public function processRemove($product)
     {
         try {
-            $sku = $product->getsku(); 
+            $sku = $product->getSku(); 
             if($product->delete()){
                 $this->gdwHelper->log('SKU: "'.$sku.'" delected.','GDW_RmProductsBySkuPath.log');
             }

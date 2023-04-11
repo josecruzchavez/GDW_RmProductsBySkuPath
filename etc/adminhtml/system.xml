@@ -3,9 +3,16 @@
     <system>
         <section id="gdwcoremodulelist">
             <group id="gdwrmproductsbyskupath" translate="label" type="text" sortOrder="98" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>GDW_RmProductsBySkuPath</label>
+                <label>GDW sRmProductsBySkuPath</label>
                 <field id="gdwrmproductsbyskupathinfo" type="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <frontend_model>GDW\RmProductsBySkuPath\Block\Adminhtml\System\ModuleInfoFull</frontend_model>
+                </field>
+            </group>
+        </section>
+        <section id="gdwcoremoduletools">
+            <group id="gdwcommands">
+                <field id="gdwrmproductsbyskupathtools" type="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>GDW\RmProductsBySkuPath\Block\Adminhtml\System\ModuleToolsInfo</frontend_model>
                 </field>
             </group>
         </section>
