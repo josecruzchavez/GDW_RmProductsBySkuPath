@@ -3,7 +3,7 @@
     <system>
         <section id="gdwcoremodulelist">
             <group id="gdwrmproductsbyskupath" translate="label" type="text" sortOrder="98" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>GDW sRmProductsBySkuPath</label>
+                <label>GDW RmProductsBySkuPath</label>
                 <field id="gdwrmproductsbyskupathinfo" type="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <frontend_model>GDW\RmProductsBySkuPath\Block\Adminhtml\System\ModuleInfoFull</frontend_model>
                 </field>
