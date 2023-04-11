@@ -4,7 +4,7 @@ namespace GDW\RmProductsBySkuPath\Console\Command;
 use Magento\Framework\Registry;
 use Magento\Framework\App\Area;
 use Magento\Framework\App\State;
-use GDW\Core\Helper\Data as GdwHelper;
+use GDW\Core\Helper\Data as HelperData;
 use Magento\Catalog\Model\ProductRepository;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputOption;
@@ -21,10 +21,16 @@ class RemoveProducts extends Command
     const PATH = 'path';
     const LIMIT = 500;
 
+    protected $state;
+    protected $registry;
+    protected $helperData;
+    protected $productRepository;
+    protected $productCollectionFactory;
+
     public function __construct(
         State $state,
         Registry $registry,
-        GdwHelper $gdwHelper,
+        HelperData $helperData,
         ProductRepository $productRepository,
         CollectionFactory $productCollectionFactory, 
         $name = null
@@ -32,7 +38,7 @@ class RemoveProducts extends Command
         parent::__construct($name);
         $this->state = $state;
         $this->registry = $registry;
-        $this->gdwHelper = $gdwHelper;
+        $this->helperData = $helperData;
         $this->productRepository = $productRepository;
         $this->productCollectionFactory = $productCollectionFactory;    
     }
@@ -83,7 +89,7 @@ class RemoveProducts extends Command
                         }
                     $progressBar->finish();
                     $output->writeln('');
-                    $this->gdwHelper->log('Finished process.');
+                    $this->helperData->log('Finished process.');
                 }else{
                     $output->writeln('<fg=red>Stop Script.</>');
                 }
@@ -93,6 +99,7 @@ class RemoveProducts extends Command
         }else{
             $output->writeln('<fg=red>Pattern is needed (--path).</>');
         }
+        return 0; /* Prevent message deprecated */
     }
 
     public function getProductCollection($filter)
@@ -111,10 +118,10 @@ class RemoveProducts extends Command
         try {
             $sku = $product->getSku(); 
             if($product->delete()){
-                $this->gdwHelper->log('SKU: "'.$sku.'" delected.','GDW_RmProductsBySkuPath.log');
+                $this->helperData->log('SKU: "'.$sku.'" delected.','GDW_RmProductsBySkuPath.log');
             }
         } catch (\Throwable $th) {
-            $this->gdwHelper->log($th,'GDW_RmProductsBySkuPath.log');
+            $this->helperData->log($th,'GDW_RmProductsBySkuPath.log');
             echo $th;
             return false;
         }
