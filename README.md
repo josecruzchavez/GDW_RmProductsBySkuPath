@@ -2,7 +2,7 @@
 Este módulo para magento 2 elimina productos con coincidencias en el SKU mediante consola.
 
 ## Compatibilidad
-✓ Magento 2.3.x, ✓ Magento 2.4.x
+✓ Magento 2.4.4+ (rama 4.4.x)
 
 ![gdw_rmproductsbyskupath_01](https://gestiondigitalweb.com/github_assets/gdw_rmproductsbyskupath/gdw_rmproductsbyskupath_01.png)
 ![gdw_rmproductsbyskupath_02](https://gestiondigitalweb.com/github_assets/gdw_rmproductsbyskupath/gdw_rmproductsbyskupath_02.png)
