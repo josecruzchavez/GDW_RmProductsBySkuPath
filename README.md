@@ -1,11 +1,13 @@
 # GDW RmProductsBySkuPath para Magento 2
+[![Latest Stable Version](https://img.shields.io/packagist/v/gdw/rmproductsbyskupath?style=for-the-badge)](https://packagist.org/packages/gdw/rmproductsbyskupath) [![PHP Version Require](https://img.shields.io/packagist/dependency-v/gdw/rmproductsbyskupath/php?style=for-the-badge)](https://packagist.org/packages/gdw/rmproductsbyskupath) [![Magento Framework Require](https://img.shields.io/packagist/dependency-v/gdw/rmproductsbyskupath/magento%2Fframework?style=for-the-badge)](https://packagist.org/packages/gdw/rmproductsbyskupath) [![License](https://img.shields.io/packagist/l/gdw/rmproductsbyskupath?style=for-the-badge)](https://packagist.org/packages/gdw/rmproductsbyskupath)
+
 Este módulo para magento 2 elimina productos con coincidencias en el SKU mediante consola.
 
 ## Compatibilidad
 ✓ Magento 2.3.x (rama 3.x)
 
-![gdw_rmproductsbyskupath_01](https://gestiondigitalweb.com/github_assets/gdw_rmproductsbyskupath/gdw_rmproductsbyskupath_01.png)
-![gdw_rmproductsbyskupath_02](https://gestiondigitalweb.com/github_assets/gdw_rmproductsbyskupath/gdw_rmproductsbyskupath_02.png)
+![gdw_rmproductsbyskupath_01](https://medios.gdw.mx/github_assets/gdw_rmproductsbyskupath/gdw_rmproductsbyskupath_01.png)
+![gdw_rmproductsbyskupath_02](https://medios.gdw.mx/github_assets/gdw_rmproductsbyskupath/gdw_rmproductsbyskupath_02.png)
 
 ###### Ejecuta los siguientes comandos en la ruta base de Magento.
 
