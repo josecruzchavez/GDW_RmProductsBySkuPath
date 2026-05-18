@@ -2,7 +2,7 @@
     "name": "gdw/rmproductsbyskupath",
     "description": "M\u00f3dulo GDW para Magento 2, permite eliminar productos por sku desde consola.",
     "type": "magento2-module",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "license": "proprietary",
     "authors": [
         {
